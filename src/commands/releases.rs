@@ -701,7 +701,6 @@ fn get_url_prefix_from_args<'a, 'b>(matches: &'b ArgMatches<'a>) -> &'b str {
     matches
         .value_of("url_prefix")
         .unwrap_or("~")
-        .trim_end_matches('/')
 }
 
 fn get_url_suffix_from_args<'a, 'b>(matches: &'b ArgMatches<'a>) -> &'b str {
